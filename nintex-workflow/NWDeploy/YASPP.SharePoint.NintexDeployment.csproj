@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB6A0634-0FB5-4232-B84A-CF7065909FFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YASPP.SharePoint.NintexDeployment</RootNamespace>
+    <AssemblyName>YASPP.SharePoint.NintexDeployment</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nintex.Workflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=913f6bae0ca5ae12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Nintex\Nintex Workflow 2010\Binaries\Nintex.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContextDataItems\AllApproverCommentsXml.cs" />
+    <Compile Include="Diagnostics\NWLoggingService.cs" />
+    <Compile Include="Features\WorkflowContent\WorkflowContent.EventReceiver.cs">
+      <DependentUpon>WorkflowContent.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\ApplicationConfig.cs" />
+    <Compile Include="Infrastructure\ContextItemMappingEntry.cs" />
+    <Compile Include="Infrastructure\NintexTaskExtensions.cs" />
+    <Compile Include="Infrastructure\NWFAdapter.cs" />
+    <Compile Include="Infrastructure\NWFMappingEntry.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Serializer.cs" />
+    <Compile Include="Utilities\WorkflowUtilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\WorkflowContent\WorkflowContent.feature">
+      <FeatureId>{c8f18c26-6701-4145-b234-7718d4b54a0e}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="NWFContent\Draft_Document_Review.nwf" />
+    <None Include="NWFContent\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a02970c4-6127-4a59-adec-442a345640df}</SharePointProjectItemId>
+    </None>
+    <None Include="NWFContent\OrderApproval.nwf" />
+    <None Include="Package\Package.package">
+      <PackageId>{89198c8c-537d-4bf2-b2c8-d197a5bf41d9}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\WorkflowContent\WorkflowContent.Template.xml">
+      <DependentUpon>WorkflowContent.feature</DependentUpon>
+    </Content>
+    <Content Include="NWFContent\ContextItemsMappings.xml" />
+    <Content Include="NWFContent\NWMappings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>
