@@ -1,13 +1,19 @@
 # awesome-workspace
 A curated list of tools, software, processes, tips &amp; tricks for myself
 
-#tools installed
-[] (Sequel Pro)[http://www.sequelpro.com/]
+## CLI
+- [goto](https://github.com/iridakos/goto)
+
+
+## Tools installed
+
+[] [Sequel Pro](http://www.sequelpro.com/)
 [] Vs Code
 [] AWS CLI
-[] React Native https://facebook.github.io/react-native/docs/getting-started.html
+[] [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
 [] oh-my-zsh
-# references
+
+## References
 - https://github.com/robbyrussell/oh-my-zsh
 - https://github.com/donnemartin/dev-setup
 - https://github.com/mbadolato/iTerm2-Color-Schemes
