@@ -2,7 +2,7 @@
 
 
 ## Tips and Tricks to make sure app is running in background for specific China ROM phones like Xiaomi, Oppo, Vivo, Lenovo, Huawei
-- Auto Start permission: https://stackoverflow.com/questions/44383983/how-to-programmatically-enable-auto-start-and-floating-window-permissions-how-t
+- Auto Start permission: https://stackoverflow.com/questions/44383983/how-to-programmatically-enable-auto-start-and-floating-window-permissions-how-t / https://stackoverflow.com/questions/34149198/how-to-enable-auto-start-for-my-app-in-xiaomi-programmatically/44818978#44818978
 - Check battery optimization: https://stackoverflow.com/questions/39256501/check-if-battery-optimization-is-enabled-or-not-for-an-app
 - Disable Power Saving mode: https://stackoverflow.com/questions/41804070/how-to-protect-background-service-alarms-to-be-kill-in-newly-launched-devices-in
 - Handle onTaskRemoved in service class: https://stackoverflow.com/questions/47890952/on-xiaomi-or-oppo-or-vivo-phones-application-task-not-working-as-expected/48184490#48184490
