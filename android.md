@@ -12,3 +12,4 @@
 
 ### References
 - https://medium.freecodecamp.org/why-your-push-notifications-never-see-the-light-of-day-3fa297520793
+- https://fabcirablog.weebly.com/blog/creating-a-never-ending-background-service-in-android
