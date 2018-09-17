@@ -18,3 +18,4 @@
 - https://developer.android.com/about/versions/oreo/android-8.0-changes
 - https://stackoverflow.com/questions/51289236/continually-running-background-service
 - https://stackoverflow.com/questions/49775577/android-how-to-keep-running-the-background-service-when-app-is-killed-by-user
+- https://medium.com/mindorks/android-scheduling-background-services-a-developers-nightmare-c573807c2705
