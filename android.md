@@ -11,6 +11,11 @@
 - For Android 8 and above, you have to enable our apps to be run in the background: Launcher > Settings > Apps > App Info > tap our app > Battery > turn on the "Background activity" option
 - Try foreground service. In which you will put a notification for user while your service is running: https://stackoverflow.com/questions/15758980/android-service-needs-to-run-always-never-pause-or-stop/15775964#15775964
 
+Manual steps
+- Turn off battery optimization 
+* http://nine-faq.9folders.com/articles/16876-how-to-turn-off-battery-optimization-on-the-huawei-devices
+* Turn off battery optimization
+
 ### References
 - https://medium.freecodecamp.org/why-your-push-notifications-never-see-the-light-of-day-3fa297520793
 - https://fabcirablog.weebly.com/blog/creating-a-never-ending-background-service-in-android
