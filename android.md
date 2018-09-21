@@ -13,7 +13,7 @@
 
 #### Turn off battery optimization
 * http://nine-faq.9folders.com/articles/16876-how-to-turn-off-battery-optimization-on-the-huawei-devices
-* Turn off battery optimization
+* https://support.doubletwist.com/hc/en-us/articles/360001504071-How-to-turn-off-battery-optimization-on-Huawei-devices
 
 ### References
 - https://medium.freecodecamp.org/why-your-push-notifications-never-see-the-light-of-day-3fa297520793
