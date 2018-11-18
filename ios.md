@@ -22,3 +22,6 @@ Prerequisites: Install Carthage and Cartfile created
 - Run Script > Input file window > add following: `$(SRCROOT)/Carthage/Build/iOS/DependencyName.framework`
 4. [Xcode] Link Binary With Libraries > Plus button > Add Other > Navigate to Project Folder > Carthage > Build > iOS > Framework to add
 ![](https://i.stack.imgur.com/pH1Rp.png)
+
+## NSCache
+- https://medium.com/journey-of-one-thousand-apps/caching-images-in-swift-e909a8e5db17
